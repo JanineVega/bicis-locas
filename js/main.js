@@ -29,7 +29,7 @@ function validateForm(){
       } else if (!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{6,15}/.test(contraseña))|| contraseña=="password" || contraseña=="123456" || contraseña == "098754"){
         alert("La contraseña es invalida! ");
         contraseñaError.innerHTML = "Debe ser mayor o igual a 6 digitos contener letras y números, almenos un carácter y una letra mayúscula.";
-        return false;
+        return true;
 
       }else if (indice == null || indice==0) {
         alert("Seleccione una opción");
